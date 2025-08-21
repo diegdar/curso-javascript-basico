@@ -7,11 +7,11 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Run Current File",
+            "program": "${file}",
             "skipFiles": [
                 "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}/Intermediate/17-debugging.js"
+            ]
         }
     ]
 }
