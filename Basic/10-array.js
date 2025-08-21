@@ -84,16 +84,16 @@ myArray = []
 myArray.length = 0 // alternativa
 console.log(myArray)
 
-// slice
+// slice: NO elimina, devuelve una porcion del array que le indicamos
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
-let myNewArray = myArray.slice(1, 3)
+let myNewArray = myArray.slice(1, 1)
 
 console.log(myArray)
 console.log(myNewArray)
 
-// splice
+// splice: elima una una porcion del array y si queremos podemos agregar nuevos elemen tos en su lugar
 
 myArray.splice(1, 3)
 console.log(myArray)
