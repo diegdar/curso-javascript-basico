@@ -6,8 +6,26 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=14146
 // NOTA: Explora diferentes sintaxis de funciones para resolver los ejercicios
 
 // 1. Crea una función que reciba dos números y devuelva su suma
+  // function sumar(a, b){
+  //   return a + b
+  // }
 
+  // console.log(sumar(1, 9))
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
+  let numeros= [4, 8, 2 ,7]
+
+  function encontraMayor(nums){
+    let mayor = nums[0]
+
+    for (let i = 1; i < nums.length; i++) {
+      if (nums[i] > mayor) {
+        mayor = nums[i]
+      }
+    }  
+    return mayor
+  }
+
+  console.log(encontraMayor(numeros))
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 
