@@ -108,7 +108,7 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=12732
     let arrResult = []    
     for (let i = 0; i < arr1.length; i++) {
         if (arr1[i] > 10) {
-            arrResult.push = arr1[i]            
+            arrResult.push(arr1[i])      
         }        
     }
 
