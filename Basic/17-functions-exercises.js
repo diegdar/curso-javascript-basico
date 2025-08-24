@@ -14,21 +14,61 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=14146
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
   let numeros= [4, 8, 2 ,7]
 
-  function encontraMayor(nums){
-    let mayor = nums[0]
+  // CON FOR  
+  // function encontraMayor(nums){
+  //   let mayor = nums[0]
 
-    for (let i = 1; i < nums.length; i++) {
-      if (nums[i] > mayor) {
-        mayor = nums[i]
-      }
-    }  
-    return mayor
-  }
+  //   for (let i = 1; i < nums.length; i++) {
+  //     if (nums[i] > mayor) {
+  //       mayor = nums[i]
+  //     }
+  //   }  
+  //   return mayor
+  // }
 
-  console.log(encontraMayor(numeros))
+  // CON FOR OF
+  // function encontraMayor(nums){
+  //   let mayor = nums[0]
+
+  //   for (const num of mums) {
+  //     if (num > mayor) {
+  //       mayor = num
+  //     }
+  //     return mayor
+  //   }
+  // }
+
+  // CON FOR EACH
+  // function encontraMayor(nums){
+  //   let mayor = nums[0]
+
+  //   nums.forEach(num => {
+  //     if(num > mayor){
+  //       mayor = num
+  //     }
+  //   });
+  //   return mayor
+  // }
+
+  // console.log(encontraMayor(numeros))
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
+  let nombre = "anais"
 
+  const contarVocales = (texto) => {
+    let vocales = ["a", "e", "i", "o", "u"]
+
+    // Set para guardar solo las vocales distintas encontradas
+    let vocalesEncontradas = new Set()
+    for (const letra of texto.toLowerCase()) {
+      if (vocales.includes(letra)) {
+        vocalesEncontradas.add(letra)
+      }
+    }
+    return vocalesEncontradas.size
+  }
+
+  console.log(contarVocales(nombre))
 // 4. Crea una función que reciba un array de strings y devuelva un nuevo array con las strings en mayúsculas
 
 // 5. Crea una función que reciba un número y devuelva true si es primo, y false en caso contrario
